@@ -2,7 +2,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn how Career Launch SA supports candidates through coaching, CV guidance, and workplace readiness.",
+  description:
+    "Learn how Career Launch SA supports job seekers with career coaching, CV reviews, interview practice, and practical employment support.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Career Launch SA",
+    description:
+      "Discover how Career Launch SA helps people move into meaningful work with confidence and practical support.",
+    url: "https://www.careerlaunchsa.com/about",
+  },
 };
 
 export default function AboutPage() {

@@ -2,7 +2,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Explore services from Career Launch SA including CV reviews, interview coaching, and career strategy support.",
+  description:
+    "Explore career services from Career Launch SA, including CV support, interview preparation, and practical career strategy coaching.",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Career Services from Career Launch SA",
+    description:
+      "Professional guidance for CVs, interviews, and job-readiness support tailored to your next career opportunity.",
+    url: "https://www.careerlaunchsa.com/services",
+  },
 };
 
 const services = [

@@ -2,7 +2,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Career Launch SA to book a consultation or ask about career support services.",
+  description:
+    "Contact Career Launch SA to book a consultation or ask about career coaching, CV support, and interview preparation services.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Career Launch SA",
+    description:
+      "Book your career consultation and get support with job searching, CV writing, and interview preparation.",
+    url: "https://www.careerlaunchsa.com/contact",
+  },
 };
 
 export default function ContactPage() {

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
@@ -14,13 +14,46 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.careerlaunchsa.com"),
   title: {
     default: "Career Launch SA",
     template: "%s | Career Launch SA",
   },
   description:
-    "Career Launch SA helps job seekers gain confidence, improve their CVs, and prepare for interviews through practical career support.",
-  metadataBase: new URL("https://example.com"),
+    "Career Launch SA helps job seekers gain confidence, improve their CVs, and prepare for interviews through practical career coaching and workplace readiness support.",
+  applicationName: "Career Launch SA",
+  authors: [{ name: "Career Launch SA" }],
+  keywords: [
+    "career coaching",
+    "CV writing",
+    "interview preparation",
+    "job readiness",
+    "career support South Africa",
+    "workplace readiness",
+    "employment support",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Career Launch SA",
+    description:
+      "Career coaching, CV support, and interview preparation for job seekers who want a stronger path into employment.",
+    url: "https://www.careerlaunchsa.com",
+    siteName: "Career Launch SA",
+    locale: "en_ZA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Career Launch SA",
+    description:
+      "Turn job-search uncertainty into a confident next step with tailored career support.",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

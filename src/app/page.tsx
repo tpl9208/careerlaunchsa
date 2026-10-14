@@ -19,9 +19,27 @@ const stats = [
   { value: "Interview", label: "Confidence coaching" },
 ];
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Career Launch SA",
+  description:
+    "Career Launch SA provides career coaching, CV support, interview preparation, and job-readiness support for individuals looking to enter or grow in the workforce.",
+  areaServed: "South Africa",
+  url: "https://www.careerlaunchsa.com",
+  email: "mailto:info@careerlaunchsa.com",
+  telephone: "+27 12 345 6789",
+  sameAs: [],
+};
+
 export default function Home() {
   return (
     <div className="bg-slate-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
