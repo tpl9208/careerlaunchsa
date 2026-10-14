@@ -32,9 +32,7 @@ export const metadata: Metadata = {
     "workplace readiness",
     "employment support",
   ],
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Career Launch SA",
     description:
@@ -63,13 +61,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div className="min-h-screen flex flex-col">
           <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-sm">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-              <a href="/" className="text-lg font-semibold tracking-tight text-slate-900">
-                Career Launch SA
+              <a href="/" className="flex items-center gap-3 text-lg font-semibold tracking-tight text-slate-900">
+                <img src="/logo.svg" alt="Career Launch SA logo" className="h-8 w-auto" />
+                <span>Career Launch SA</span>
               </a>
 
               <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 sm:flex">
                 <a href="/about" className="transition hover:text-slate-900">About</a>
                 <a href="/services" className="transition hover:text-slate-900">Services</a>
+                <a href="/testimonials" className="transition hover:text-slate-900">Testimonials</a>
                 <a href="/contact" className="transition hover:text-slate-900">Contact</a>
               </nav>
 

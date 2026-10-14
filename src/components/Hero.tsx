@@ -17,26 +17,27 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a href="/contact" className="inline-flex items-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-700">
+            <a href="/contact" className="inline-flex items-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-700">
               Book a consultation
             </a>
-            <a href="/services" className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100">
+            <a href="/services" className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-slate-100">
               View services
             </a>
           </div>
         </div>
 
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg">
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_20px_80px_rgba(15,23,42,0.1)]
+        transition-transform duration-300 hover:-translate-y-1">
           <div className="space-y-4">
-            <div>
+            <div className="rounded-xl bg-slate-100 p-4">
               <p className="text-3xl font-bold text-slate-900">1:1</p>
               <p className="text-sm text-slate-500">Personal coaching</p>
             </div>
-            <div>
+            <div className="rounded-xl bg-slate-100 p-4">
               <p className="text-3xl font-bold text-slate-900">CV</p>
               <p className="text-sm text-slate-500">Professional profile support</p>
             </div>
-            <div>
+            <div className="rounded-xl bg-slate-100 p-4">
               <p className="text-3xl font-bold text-slate-900">Interview</p>
               <p className="text-sm text-slate-500">Practical mock interviews</p>
             </div>
