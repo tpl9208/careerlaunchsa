@@ -1,45 +1,32 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import ContactForm from "../components/ContactForm";
+import Hero from "../components/Hero";
+import Pricing from "../components/Pricing";
+import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
+    <div className="bg-slate-50">
       <Hero />
+      <Pricing />
+      <Testimonials />
 
-      {/* Temporary placeholders for the rest of the sections */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-6">Latest Learnerships</h2>
-        <p className="text-gray-600">Coming soon...</p>
-      </section>
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <h2 className="text-lg font-semibold text-slate-900">Ready to start?</h2>
+            <p className="mt-3 text-slate-700">Book a consultation and we’ll build a plan tailored to your goals.</p>
+            <a href="/contact" className="mt-6 inline-flex items-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-700">Contact us</a>
+          </div>
 
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">Popular Salaries</h2>
-          <p className="text-gray-600">Coming soon...</p>
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <h2 className="text-lg font-semibold text-slate-900">Ask us anything</h2>
+            <p className="mt-3 text-slate-700">Use the form to send a message and we’ll reply within one business day.</p>
+            <div className="mt-4">
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </section>
-
-      <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-6">Featured Careers</h2>
-        <p className="text-gray-600">Coming soon...</p>
-      </section>
-
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">Career Tools</h2>
-          <p className="text-gray-600">Coming soon...</p>
-        </div>
-      </section>
-
-      {/* Simple Footer for now */}
-      <footer className="bg-gray-900 text-white py-10">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-lg font-semibold">CareerLaunch SA</p>
-          <p className="mt-2 text-gray-400">Helping South Africans launch their careers</p>
-        </div>
-      </footer>
     </div>
   );
 }
-
